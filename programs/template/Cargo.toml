@@ -1,12 +1,12 @@
 [package]
-name = "anchor_example"
+name = "template"
 version = "0.1.0"
 description = "Created with Anchor"
 edition = "2018"
 
 [lib]
 crate-type = ["cdylib", "lib"]
-name = "anchor_example"
+name = "template"
 
 [features]
 no-entrypoint = []

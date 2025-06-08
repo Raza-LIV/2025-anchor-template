@@ -1,30 +1,14 @@
 {
   "compilerOptions": {
-    "types": [
-      "mocha",
-      "chai"
-    ],
-    "typeRoots": [
-      "./node_modules/@types"
-    ],
-    "lib": [
-      "es2015",
-      "DOM"
-    ],
-    "target": "es6",
-    "resolveJsonModule": true,
-    "allowJs": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
+    "types": ["@types/node", "@coral-xyz/anchor"],
+    "lib": ["es2020", "DOM"],
+    "target": "es2020",
+    "module": "commonjs",
     "strict": true,
-    "noImplicitAny": false,
-    "forceConsistentCasingInFileNames": true,
-    "module": "CommonJS",
-    "moduleResolution": "node",
-    "isolatedModules": true,
-    "noFallthroughCasesInSwitch": true
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true
   },
-  "include": ["tests"],
-  "exclude": ["node_modules"]
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules", "migrations/**/*.js"]
 }

@@ -1,10 +1,5 @@
 use anchor_lang::prelude::*;
 
-use structs::*;
-
-mod structs;
-mod constants;
-
 #[program]
 pub mod anchor_example {
     use super::*;
