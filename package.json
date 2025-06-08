@@ -4,11 +4,11 @@
   "private": true,
   "scripts": {
     "build": "anchor build",
+    "keygen": "solana-keygen new -o target/deploy/template-keypair.json",
+    "validate": "solana-test-validator",
     "deploy:local": "anchor deploy",
     "deploy:dev": "anchor deploy --provider.cluster=devnet",
-    "upgrade:dev": "anchor upgrade target/deploy/anchor_example.so --provider.cluster=devnet --program-id <TODO>",
-    "deploy:test": "anchor deploy --provider.cluster=testnet",
-    "upgrade:test": "anchor upgrade target/deploy/anchor_example.so --provider.cluster=testnet --program-id <TODO>"
+    "deploy:test": "anchor deploy --provider.cluster=testnet"
   },
   "dependencies": {
     "@project-serum/anchor": "^0.13.2",
