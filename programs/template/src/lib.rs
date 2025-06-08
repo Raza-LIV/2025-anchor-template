@@ -15,5 +15,3 @@ pub mod anchor_example {
         Ok(())
     }
 }
-
-
